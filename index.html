@@ -13,24 +13,37 @@
             <img src="./images/prLOGO.png" id="header-img"/>
         </div>
         <div class="nav-bar-container">
-                <nav class="nav-link">Why a pet rock?</nav>
-                <nav class="nav-link">Care Guide</nav>
-                <nav class="nav-link">Types of Rocks</nav>
+                <nav class="nav-link"><a href="#why-a-pet-rock">Why a pet rock?</a></nav>
+                <nav class="nav-link"><a href="#care-guide">Care Guide</a></nav>
+                <nav class="nav-link"><a href="#types-of-rocks">Types of Rocks</a></nav>
             </nav>
         </div>
         </header>
     </div>
+    <div class="main-container">
+        <div class="form-container">
         <form id="form" >
-            <placeholder>Interested to our newsletter?</placeholder>
-            <input id="email" type="email" required></input>
+            <placeholder><h1>Interested to our newsletter?</h1></placeholder><br>
+            <input id="email" type="email" required></input><br>
             <input id="submit" type="submit" action="https://www.freecodecamp.com/email-submit"></submit>
-        </form> 
+        </form>
+        <div id="why-a-pet-rock">
+            <h1>Why a pet rock?</h1>
+            <p><h3>Low Maintenance:</h3> Pet rocks don't need feeding, grooming, or walks. They're the perfect pet for someone with a busy schedule, as they require no care at all.</p>
+            <p><h3>No Allergies:</h3> Unlike traditional pets, pet rocks won't trigger any allergies, making them ideal for people who might have sensitivities to fur, dander, or feathers.</p>
+            <p><h3>Long Lifespan:</h3> Pet rocks will last forever and don't experience health problems or aging, giving you a lifelong companion.</p>
+        </div> 
+        </div>
+        <div id="care-guide">
+        <h1>Care Guide</h1>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/5qHlYdHUvFw?si=fl6h4B0wEJkUJBYF" 
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
         encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
         allowfullscreen id="video"></iframe>
-        <div id="type-of-rock">
-            <div>
+        </div>
+        <h1>Types of rocks</h1>
+        <div id="types-of-rocks">
+            <div class="metamorphic-rock">
             <h3>Metamorphic Rock</h3>
             <h1>$10</h1>
             <p>Formed from the transformation of existing rock types under heat and 
@@ -54,11 +67,13 @@
                 the cooling rate, with slower cooling creating larger crystals.</p>
             </div>
         </div>
-        <footer>
-            <nav>Privacy</nav>
-            <nav>Terms</nav>
-            <nav>Contact</nav>
-            <p>© 2018, Gandalf the Rock</p>
-        </footer>
+    </div>
+    <footer>
+        <nav><a href="#">Privacy</a></nav>
+        <nav><a href="#">Terms</a></nav>
+        <nav><a href="#">Contact</a></nav>
+        <p class="nav-copyright">© 2018, Gandalf the Rock</p>
+    </footer>
+    
     </body>
 </html>

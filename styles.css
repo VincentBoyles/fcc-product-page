@@ -1,23 +1,146 @@
 body {
-   padding-left: 100px;
-   padding-right: 100px;
+    font-family: 'Arial', sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 1.6;
 }
 
-
-#header-img {
-    width: 200px;
-    height: 200px;;
+h1, h3 {
+    color: #333;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Improved Header and Nav */
 .header-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#header-img {
+    width: 150px;
+    height: auto;
 }
 
 .nav-bar-container {
     display: flex;
+    gap: 20px;
+}
+
+.nav-bar-container nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-bar-container nav a:hover {
+    color: #0056b3;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+form {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Improved Layout for Main Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#types-of-rocks {
+    display: flex;
     flex-direction: row;
-    gap: 30px;
-    padding-top: 30px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 50px;
+}
+
+#types-of-rocks div {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+#types-of-rocks div h1 {
+    color: #007BFF;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+footer nav {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+footer nav:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .nav-bar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #types-of-rocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #types-of-rocks div {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
 }
